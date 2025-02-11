@@ -9,10 +9,61 @@
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
+        var valor01, valor02, resultado1, resultado1, resultado2, resultado3, resultado4
+       
+        function somar() {
+            valor01 = parseInt(document.getElementById('valor01').value)
+            valor02 = parseInt(document.getElementById('valor02').value)
+
+            resultado = valor01 + valor02
+
+            document.getElementById('resultado1').innerHTML = resultado1
+            }
+      function subtrair() {
+            valor01 = parseInt(document.getElementById('valor01').value)
+            valor02 = parseInt(document.getElementById('valor02').value)
+
+            resultado = valor01 - valor02
+
+            document.getElementById('resultado2').innerHTML = resultado2
+      }
+      function multiplicacao() {
+            valor01 = parseInt(document.getElementById('valor01').value)
+            valor02 = parseInt(document.getElementById('valor02').value)
+
+            resultado = valor01 * valor02
+
+            document.getElementById('resultado3').innerHTML = resultado3
+      }
+            function divisao() {
+            valor01 = parseInt(document.getElementById('valor01').value)
+            valor02 = parseInt(document.getElementById('valor02').value)
+
+            resultado = valor01 / valor02
+
+            document.getElementById('resultado3').innerHTML = resultado4
+      }
+
+
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <h1>CALCULADORA</h1>
+
+<input type="text" placeholder="Insira o primeiro valor:" id="valor01">
+<input type="text" placeholder="Insira o segundo valor:" id="valor02">
+<input type="button" value="CALCULAR" id="btnSomar" onclick="somar()">
+    <h1 "soma:" + id="resultado1"></h1> <br>
+        <h1 "subtração:" +  id="resultado2"></h1><br>
+            <h1 "multiplicação:" +  id="resultado3"></h1><br>
+                <h1 "subtração:" +  id="resultado4"></h1>
+
+
+
+
+
+
+
+
 </body>
 </html>
